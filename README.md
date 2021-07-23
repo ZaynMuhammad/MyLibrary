@@ -7,12 +7,12 @@ View a live [demo here](https://zaynmuhammad.github.io/MyLibrary/)
 Overview
 Features:
 
-    - Data is saved in localStorage
-    You can add a book
-    Before adding a book, you can mark if it's already read or not
-    You can change book status after addition
-    You can delete a particular book
-    You can delete all books at once
+- Data is saved in localStorage
+You can add a book
+Before adding a book, you can mark if it's already read or not
+You can change book status after addition
+You can delete a particular book
+You can delete all books at once
 
 Tools:
 

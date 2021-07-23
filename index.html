@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>📚Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+        <link rel="shortcut icon" href="#">
+        <script src="https://kit.fontawesome.com/c3ebdaa72c.js" crossorigin="anonymous"></script>   
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="main-grid">
+            <aside class="side-grid">
+                <h1 class="aside-header">📚My Library</h1>
+                <form id="book-form" class="form-outline form-floating mb-3">
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="title" name="title">
+                        <label for="floatingInput">Book Title</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="author" name="author">
+                        <label for="floatingInput">Author</label>
+                    </div>
+
+                    <div class="form-floating">
+                        <input type="number" id="typeNumber" class="form-control" placeholder="pages" name="pages"/>
+                        <label class="form-label" for="typeNumber">Pages</label>
+                    </div>
+
+                <div class="form-check read-status">
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                        name="read"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                        <p class="read-status-phrase">I have read this book </p>
+                    </label>
+                </div>
+                    
+
+                    <!--
+                    <input ID="title floatingInput" type="text" id="typeText" class="form-control" />
+                    <label for="floatingInput" class="form-label" for="typeText">Book Title</label>
+
+                    <label class="form-label" for="typeText">Author</label>
+                    <input ID="author" type="text" id="typeText" class="form-control" />
+
+                    <label class="form-label" for="typeText">Number Of Pages</label>
+                    <input ID="pages" type="number" id="typeText" class="form-control" />
+
+                    <label class="form-label" for="typeText">I Have Completed This Book!</label>
+                    <input ID="read" type="checkbox"/>
+                    <br>
+                    -->
+                </form>
+                <!--
+                <button ID="submit-book">ADD BOOK</button>
+                -->
+                <button id="submit-book" type="button" class="btn btn-primary">ADD BOOK</button>
+            </aside>
+
+            <main class="book-display">
+                <div class="book-stats">
+                    <h5 ID="books-read" class="stats"></h5>
+                    <h5 ID="books-unread" class="stats"></h5>
+                    <h5 ID="books-total" class="stats"></h5>
+                    <button class="clear btn btn-primary">CLEAR ALL</button>
+                </div>
+
+                <table>
+                    <thead class="book-list-header">
+                        <tr>
+                            <td>TITLE</td>
+                            <td>AUTHOR</td>
+                            <td>PAGES</td>
+                            <td>READ</td>
+                            <td>REMOVE</td>
+                        </tr>
+                    </thead>
+
+                    <tbody class="book-list">
+                    </tbody>
+                </table>
+            </main>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="books.js" async defer></script>
+        <script src="Assets/js/bootstrap.js"></script>
+    </body>
+</html>
